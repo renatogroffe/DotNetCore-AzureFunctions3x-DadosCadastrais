@@ -24,7 +24,7 @@ namespace FunctionAppDadosCadastrais
             log.LogInformation("Function ListarDadosCadastrais - HTTP GET");
             return new OkObjectResult(new
             {
-                Versao = "v1",
+                Versao = "v2",
                 Dados = _cadastroSvc.ListAll()
             });
         }
